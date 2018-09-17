@@ -1,8 +1,9 @@
 {
   "name": "bright-css",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Modern CSS Framework",
-  "main": "index.js",
+  "main": "",
+  "style": "css/bright",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,9 +13,10 @@
   },
   "keywords": ["Framework", "CSS"],
   "author": "Akadream",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Elias-Developpement/bright/issues"
   },
-  "homepage": "https://github.com/Elias-Developpement/bright#readme"
+  "homepage": "https://github.com/Elias-Developpement/bright#readme",
+  "files": "css/{css,js}/*.{css,js,map}"
 }
