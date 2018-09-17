@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/Elias-Developpement/bright.git"
   },
-  "keywords": [],
+  "keywords": ["Framework", "CSS"],
   "author": "Akadream",
   "license": "ISC",
   "bugs": {
