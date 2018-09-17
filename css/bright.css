@@ -1,0 +1,646 @@
+/*
+ *    Bright v1.0 - (C) Copyright 2018
+ *    All rights reserved
+ *    Licensed MIT
+ *
+ *    Author : Akadream
+ *    Last update : 16/09/2018
+ */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800");
+/* line 12, C:/laragon/www/bright/scss/bright.scss */
+body {
+  font-family: 'Montserrat','Open Sans', 'Arial', sans-serif;
+}
+
+/* line 16, C:/laragon/www/bright/scss/bright.scss */
+[href] {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+/* line 21, C:/laragon/www/bright/scss/bright.scss */
+:focus {
+  outline: inherit;
+}
+
+/*
+ *    File : Variables
+ *    Last update : 16/09/2018
+ */
+/* line 3, C:/laragon/www/bright/scss/_navbar.scss */
+.navbar, .nav {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  color: #ffffff;
+}
+
+/* line 13, C:/laragon/www/bright/scss/_navbar.scss */
+.navbar {
+  justify-content: space-between;
+  background-color: #333333;
+}
+
+/* line 18, C:/laragon/www/bright/scss/_navbar.scss */
+.nav {
+  list-style: none;
+  margin-right: 0.2rem;
+}
+
+/* line 23, C:/laragon/www/bright/scss/_navbar.scss */
+.navbar-expand {
+  width: 100%;
+}
+
+/* line 27, C:/laragon/www/bright/scss/_navbar.scss */
+.navbar-collumn, .nav-collumn {
+  flex-direction: column;
+}
+
+/* line 31, C:/laragon/www/bright/scss/_navbar.scss */
+.navbar-title {
+  font-size: 1.2em;
+  margin: 0 1.2rem;
+  padding: 0;
+}
+
+/* line 37, C:/laragon/www/bright/scss/_navbar.scss */
+.nav-item {
+  margin: 0.25rem 1rem;
+}
+
+/* line 41, C:/laragon/www/bright/scss/_navbar.scss */
+.nav-link {
+  line-height: 1;
+}
+
+/* line 44, C:/laragon/www/bright/scss/_navbar.scss */
+.nav-link:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* line 1, C:/laragon/www/bright/scss/_card.scss */
+.card {
+  display: flex;
+  flex-direction: column;
+  min-width: 225px;
+  width: 375px;
+  margin: 50px;
+  border-radius: 5px;
+  box-shadow: 0 0 0.4em #dddddd;
+  color: #666666;
+}
+
+/* line 12, C:/laragon/www/bright/scss/_card.scss */
+.card .card-header, .card .card-body {
+  padding: 20px;
+}
+
+/* line 16, C:/laragon/www/bright/scss/_card.scss */
+.card .card-header {
+  border-bottom: 1px solid #dddddd;
+}
+
+/* line 19, C:/laragon/www/bright/scss/_card.scss */
+.card .card-header .card-title {
+  font-size: 1.6em;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 28, C:/laragon/www/bright/scss/_card.scss */
+.card .card-body .card-description {
+  margin: 5px 0 10px;
+  line-height: 1.47;
+}
+
+/* line 34, C:/laragon/www/bright/scss/_card.scss */
+.card:hover {
+  box-shadow: 0 0 2em #dedede;
+}
+
+/* line 39, C:/laragon/www/bright/scss/_card.scss */
+.card-expand {
+  width: 80%;
+}
+
+/* line 1, C:/laragon/www/bright/scss/_transitions.scss */
+.fade {
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.3s;
+}
+
+/* line 7, C:/laragon/www/bright/scss/_transitions.scss */
+.transition-slow {
+  transition-duration: 1s;
+}
+
+/* line 11, C:/laragon/www/bright/scss/_transitions.scss */
+.transition-medium {
+  transition-duration: 0.6s;
+}
+
+/* line 15, C:/laragon/www/bright/scss/_transitions.scss */
+.transition-fast {
+  transition-duration: 0.3s;
+}
+
+/* line 2, C:/laragon/www/bright/scss/_buttons.scss */
+.button {
+  display: inline;
+  position: relative;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: 1px solid #333333;
+  border-radius: 3px;
+  background-color: transparent;
+  transition: 0.3s;
+  color: #333333;
+  cursor: pointer;
+}
+
+/* line 15, C:/laragon/www/bright/scss/_buttons.scss */
+.button:hover {
+  box-sizing: inherit;
+  background-color: #333333;
+  color: #ffffff;
+}
+
+/* line 22, C:/laragon/www/bright/scss/_buttons.scss */
+.button-rounded {
+  border-radius: 999px;
+}
+
+/* line 26, C:/laragon/www/bright/scss/_buttons.scss */
+.button-blue {
+  border-color: #3540ff;
+  color: #3540ff;
+}
+
+/* line 30, C:/laragon/www/bright/scss/_buttons.scss */
+.button-blue:hover {
+  background-color: #3540ff;
+}
+
+/* line 35, C:/laragon/www/bright/scss/_buttons.scss */
+.button-red {
+  border-color: #e35251;
+  color: #e35251;
+}
+
+/* line 39, C:/laragon/www/bright/scss/_buttons.scss */
+.button-red:hover {
+  background-color: #e35251;
+}
+
+/* line 44, C:/laragon/www/bright/scss/_buttons.scss */
+.button-green {
+  border-color: #58c964;
+  color: #58c964;
+}
+
+/* line 48, C:/laragon/www/bright/scss/_buttons.scss */
+.button-green:hover {
+  background-color: #58c964;
+}
+
+/* line 53, C:/laragon/www/bright/scss/_buttons.scss */
+.button-yellow {
+  border-color: #f3c816;
+  color: #f3c816;
+}
+
+/* line 57, C:/laragon/www/bright/scss/_buttons.scss */
+.button-yellow:hover {
+  background-color: #f3c816;
+  color: #222222;
+}
+
+/* line 63, C:/laragon/www/bright/scss/_buttons.scss */
+.button-purple {
+  border-color: #c64fe7;
+  color: #c64fe7;
+}
+
+/* line 67, C:/laragon/www/bright/scss/_buttons.scss */
+.button-purple:hover {
+  background-color: #c64fe7;
+}
+
+/* line 1, C:/laragon/www/bright/scss/_buttons-group.scss */
+.button-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: stretch;
+}
+
+/* line 7, C:/laragon/www/bright/scss/_buttons-group.scss */
+.button-group .button {
+  border-radius: 0;
+  background-color: #333333;
+  color: #ffffff;
+  border: none;
+}
+
+/* line 13, C:/laragon/www/bright/scss/_buttons-group.scss */
+.button-group .button:hover {
+  background-color: #222222;
+}
+
+/* line 18, C:/laragon/www/bright/scss/_buttons-group.scss */
+.button-group .button-red {
+  background-color: #e35251;
+}
+
+/* line 21, C:/laragon/www/bright/scss/_buttons-group.scss */
+.button-group .button-red:hover {
+  background-color: #863737;
+}
+
+/* line 26, C:/laragon/www/bright/scss/_buttons-group.scss */
+.button-group .button-blue {
+  background-color: #3540ff;
+}
+
+/* line 29, C:/laragon/www/bright/scss/_buttons-group.scss */
+.button-group .button-blue:hover {
+  background-color: #2d35c4;
+}
+
+/* line 34, C:/laragon/www/bright/scss/_buttons-group.scss */
+.button-group .button-green {
+  background-color: #58c964;
+}
+
+/* line 37, C:/laragon/www/bright/scss/_buttons-group.scss */
+.button-group .button-green:hover {
+  background-color: #2d6633;
+}
+
+/* line 42, C:/laragon/www/bright/scss/_buttons-group.scss */
+.button-group .button-yellow {
+  background-color: #f3c816;
+}
+
+/* line 45, C:/laragon/www/bright/scss/_buttons-group.scss */
+.button-group .button-yellow:hover {
+  background-color: #dcb500;
+}
+
+/* line 50, C:/laragon/www/bright/scss/_buttons-group.scss */
+.button-group .button-purple {
+  background-color: #c64fe7;
+}
+
+/* line 53, C:/laragon/www/bright/scss/_buttons-group.scss */
+.button-group .button-purple:hover {
+  background-color: #A441BF;
+}
+
+/* line 58, C:/laragon/www/bright/scss/_buttons-group.scss */
+.button-group .button:first-child {
+  border-radius: 3px 0 0 3px !important;
+}
+
+/* line 62, C:/laragon/www/bright/scss/_buttons-group.scss */
+.button-group .button:last-child {
+  border-radius: 0 3px 3px 0 !important;
+}
+
+/* line 1, C:/laragon/www/bright/scss/_tables.scss */
+.flex-table {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 99%;
+  margin: 10px auto;
+}
+
+/* line 8, C:/laragon/www/bright/scss/_tables.scss */
+.flex-table .column {
+  display: block;
+  margin: 5px;
+  flex-basis: auto;
+  flex-grow: 1;
+  height: 38px;
+  background: #3540ff;
+}
+
+/* line 17, C:/laragon/www/bright/scss/_tables.scss */
+.flex-table .column-lg-2 {
+  flex-grow: 2;
+}
+
+/* line 21, C:/laragon/www/bright/scss/_tables.scss */
+.flex-table .column-lg-3 {
+  flex-grow: 3;
+}
+
+/* line 25, C:/laragon/www/bright/scss/_tables.scss */
+.flex-table .column-lg-4 {
+  flex-grow: 4;
+}
+
+/* line 29, C:/laragon/www/bright/scss/_tables.scss */
+.flex-table .column-lg-5 {
+  flex-grow: 5;
+}
+
+/* line 33, C:/laragon/www/bright/scss/_tables.scss */
+.flex-table .column-lg-5 {
+  flex-grow: 5;
+}
+
+/* line 37, C:/laragon/www/bright/scss/_tables.scss */
+.flex-table .column-lg-6 {
+  flex-grow: 6;
+}
+
+@media screen and (max-width: 800px) {
+  /* line 43, C:/laragon/www/bright/scss/_tables.scss */
+  .flex-table {
+    flex-direction: column;
+  }
+}
+
+/* line 1, C:/laragon/www/bright/scss/_alerts.scss */
+.alert {
+  position: relative;
+  margin: 10px;
+  padding: 15px 20px;
+  border: 1px solid #666666;
+  border-radius: 3px;
+  background-color: #bbbbbb;
+}
+
+/* line 11, C:/laragon/www/bright/scss/_alerts.scss */
+.alert-danger {
+  border-color: #863737;
+  background-color: #e39897;
+  color: #863737;
+}
+
+/* line 17, C:/laragon/www/bright/scss/_alerts.scss */
+.alert-success {
+  border-color: #2d6633;
+  background-color: #bce6c0;
+  color: #2d6633;
+}
+
+/* line 23, C:/laragon/www/bright/scss/_alerts.scss */
+.alert-critical {
+  border-color: #dcb500;
+  background-color: #f1ffbb;
+  color: #dcb500;
+}
+
+/* line 1, C:/laragon/www/bright/scss/_badges.scss */
+.badge {
+  display: inline;
+  padding: 5px;
+  font-size: 0.7em;
+  font-weight: bold;
+  border-radius: 3px;
+  background-color: #333333;
+  color: #ffffff;
+}
+
+/* line 12, C:/laragon/www/bright/scss/_badges.scss */
+.badge-primary {
+  background-color: #3540ff;
+}
+
+/* line 16, C:/laragon/www/bright/scss/_badges.scss */
+.badge-danger {
+  background-color: #e35251;
+}
+
+/* line 20, C:/laragon/www/bright/scss/_badges.scss */
+.badge-critical {
+  background-color: #f3c816;
+  color: #222222;
+}
+
+/* line 1, C:/laragon/www/bright/scss/_dreadcrumb.scss */
+.dreadcrumb {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+/* line 7, C:/laragon/www/bright/scss/_dreadcrumb.scss */
+.dreadcrumb-link {
+  display: inline;
+  position: relative;
+  padding: 0 10px 0 20px;
+  margin: 0 5px;
+  line-height: 40px;
+  font-size: 0.8em;
+  font-weight: bold;
+  background-color: #333333;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+/* line 21, C:/laragon/www/bright/scss/_dreadcrumb.scss */
+.dreadcrumb-link::before, .dreadcrumb-link::after {
+  display: block;
+  position: absolute;
+  content: '';
+  border-style: solid;
+  height: 0;
+  width: 0;
+  top: 0;
+  transition: 0.3s;
+}
+
+/* line 34, C:/laragon/www/bright/scss/_dreadcrumb.scss */
+.dreadcrumb-link::before {
+  border-color: #ffffff;
+  border-width: 20px 10px;
+  left: 0;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+}
+
+/* line 44, C:/laragon/www/bright/scss/_dreadcrumb.scss */
+.dreadcrumb-link::after {
+  border-color: #333333;
+  border-width: 20px 10px;
+  right: -20px;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+}
+
+/* line 54, C:/laragon/www/bright/scss/_dreadcrumb.scss */
+.dreadcrumb-link:first-child {
+  padding-left: 10px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* line 59, C:/laragon/www/bright/scss/_dreadcrumb.scss */
+.dreadcrumb-link:first-child::before {
+  display: none;
+}
+
+/* line 63, C:/laragon/www/bright/scss/_dreadcrumb.scss */
+.dreadcrumb-link:hover {
+  background-color: #444444;
+}
+
+/* line 66, C:/laragon/www/bright/scss/_dreadcrumb.scss */
+.dreadcrumb-link:hover::after {
+  border-color: #444444;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+}
+
+/* line 2, C:/laragon/www/bright/scss/_form.scss */
+.form .form-header, .form .form-body {
+  padding: 30px 20px 15px 20px;
+}
+
+/* line 7, C:/laragon/www/bright/scss/_form.scss */
+.form .form-header .form-title {
+  font-size: 1.6em;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 16, C:/laragon/www/bright/scss/_form.scss */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+}
+
+/* line 24, C:/laragon/www/bright/scss/_form.scss */
+.form-label {
+  margin-bottom: 10px;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+/* line 30, C:/laragon/www/bright/scss/_form.scss */
+.form-input {
+  display: block;
+  width: calc(100% - 22px);
+  height: 22px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 0.8em;
+  color: #777777;
+  border: 1px solid #bbbbbb;
+}
+
+/* line 42, C:/laragon/www/bright/scss/_form.scss */
+.form-input[type="password"] {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* line 47, C:/laragon/www/bright/scss/_form.scss */
+select.form-input {
+  width: 100%;
+  height: calc(22px + 12px);
+}
+
+/* line 52, C:/laragon/www/bright/scss/_form.scss */
+select[multiple].form-input {
+  font-size: 1rem;
+  height: calc(1rem * 5 + 12px);
+}
+
+/* line 56, C:/laragon/www/bright/scss/_form.scss */
+select[multiple].form-input option {
+  line-height: initial;
+}
+
+/* line 61, C:/laragon/www/bright/scss/_form.scss */
+.form-input-rounded {
+  border-radius: 999px;
+}
+
+/* line 1, C:/laragon/www/bright/scss/_progress.scss */
+.progress {
+  display: block;
+  position: relative;
+  width: 80%;
+  height: 16px;
+  margin: 50px;
+  background-color: #dddddd;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+/* line 13, C:/laragon/www/bright/scss/_progress.scss */
+.progressbar {
+  display: block;
+  width: 0;
+  height: 100%;
+  background-color: #e35251;
+}
+
+/* line 1, C:/laragon/www/bright/scss/_tooltip.scss */
+.tooltip {
+  display: none;
+  position: absolute;
+  overflow: hidden;
+  padding: 5px;
+  top: -30px;
+  font-size: 0.8em;
+  font-weight: bold;
+  background-color: #3540ff;
+  border-radius: 3px;
+  opacity: 0;
+  color: #ffffff;
+}
+
+/* line 15, C:/laragon/www/bright/scss/_tooltip.scss */
+.tooltip::after {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 30px;
+  border-color: #3540ff;
+  border-style: solid;
+  border-width: 10px 20px;
+  border-bottom: transparent;
+  border-right: transparent;
+  border-left: transparent;
+}
+
+/* line 33, C:/laragon/www/bright/scss/_tooltip.scss */
+[tooltip]:hover .tooltip {
+  display: block;
+  opacity: 1;
+}
+
+/* line 39, C:/laragon/www/bright/scss/bright.scss */
+::selection {
+  color: white;
+  background: #e35251;
+}
+
+/*
+@import "cards";
+@import "grid";
+@import "tables";
+@import "badges";
+@import "alertes";
+@import "dropdown";
+@import "buttons";
+@import "modals";
+@import "transitions";*/
+
+/*# sourceMappingURL=../css/bright.map */

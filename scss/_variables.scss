@@ -1,0 +1,84 @@
+
+/*
+ *    File : Variables
+ *    Last update : 16/09/2018
+ */
+
+// Colors
+$white: #ffffff !default;
+$black: #000000 !default;
+$gray-1: #111111 !default;
+$gray-2: #222222 !default;
+$gray-3: #333333 !default;
+$gray-4: #444444 !default;
+$gray-5: #555555 !default;
+$gray-6: #666666 !default;
+$gray-7: #777777 !default;
+$gray-8: #888888 !default;
+$gray-9: #999999 !default;
+$gray-a: #aaaaaa !default;
+$gray-b: #bbbbbb !default;
+$gray-c: #cccccc !default;
+$gray-d: #dddddd !default;
+$gray-e: #eeeeee !default;
+$gray-f: #ffffff !default;
+
+$grays: () !default;
+$grays: map-merge(
+  (
+    "1": $gray-1,
+    "2": $gray-2,
+    "3": $gray-3,
+    "4": $gray-4,
+    "5": $gray-5,
+    "6": $gray-6,
+    "7": $gray-7,
+    "8": $gray-8,
+    "9": $gray-9,
+    "a": $gray-a,
+    "b": $gray-b,
+    "c": $gray-c,
+    "d": $gray-d,
+    "e": $gray-e,
+    "f": $gray-f
+  ),
+  $grays
+);
+
+$red: #e35251 !default;
+$light-red: #e39897 !default;
+$dark-red: #863737 !default;
+
+$blue: #3540ff !default;
+$light-blue: #3540ff !default;
+$dark-blue: #2d35c4 !default;
+
+$green: #58c964 !default;
+$light-green: #bce6c0 !default;
+$dark-green: #2d6633 !default;
+
+$yellow: #f3c816 !default;
+$light-yellow: #f1ffbb !default;
+$dark-yellow: #dcb500 !default;
+
+$purple: #c64fe7 !default;
+$light-purple: #c64fe7 !default;
+$dark-purple: #A441BF !default;
+
+// Navbar
+$navbar-title-size: 1.2em !default;
+$margin-navbar-x: 1.2rem !default;
+$margin-nav-link-x: 1rem !default;
+$margin-nav-link-y: 0.25rem !default;
+$navbar-default-lineheight: 1 !default;
+
+// Buttons
+$buttons-default-rounded: 3px !default;
+$buttons-rounded: 999px;
+$buttons-margin-y: 10px !default;
+$buttons-margin-x: 0 !default;
+$buttons-padding-y: 10px !default;
+$buttons-padding-x: 20px !default;
+
+// Alert
+$alert-default-rounded: 3px !default;

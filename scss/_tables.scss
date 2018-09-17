@@ -1,0 +1,46 @@
+.flex-table {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 99%;
+  margin: 10px auto;
+
+  .column {
+    display: block;
+    margin: 5px;
+    flex-basis: auto;
+    flex-grow: 1;
+    height: 38px;
+    background: $blue;
+  }
+
+  .column-lg-2 {
+    flex-grow: 2;
+  }
+
+  .column-lg-3 {
+    flex-grow: 3;
+  }
+
+  .column-lg-4 {
+    flex-grow: 4;
+  }
+
+  .column-lg-5 {
+    flex-grow: 5;
+  }
+
+  .column-lg-5 {
+    flex-grow: 5;
+  }
+
+  .column-lg-6 {
+    flex-grow: 6;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .flex-table {
+    flex-direction: column;
+  }
+}

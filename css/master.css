@@ -1,0 +1,100 @@
+.navbar {
+  background-color: #03050e;
+}
+
+.nav, .nav-item {
+  margin: 0;
+}
+
+.nav-link {
+  display: block;
+  padding: 20px;
+  transition: 0.2s;
+}
+
+.nav-link:hover {
+  color: white;
+  background-color: #1473e6;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  min-height: 425px;
+
+  background-color: #14161f;
+  color: white;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-title {
+  margin: 10px;
+  font-size: 4em;
+  font-weight: 100;
+}
+
+.section-title {
+  margin: 40px 0;
+  font-size: 2.6em;
+  font-weight: 100;
+}
+
+.header-description {
+  font-size: 1.6em;
+}
+
+.section-description {
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.66;
+}
+
+.header-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.header-nav .button {
+  margin: 10px;
+}
+
+.code {
+  display: block;
+  width: 60%;
+  margin: 50px auto;
+  padding: 10px 15px;
+  text-align: left;
+  line-height: 34px;
+
+  color: white;
+  border-radius: 3px;
+  background-color: #202225;
+}
+
+.button {
+  color: #1473e6;
+  border-color: #1473e6;
+}
+
+.button:hover {
+  background-color: #1473e6;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+   -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+      -moz-user-select: none; /* Firefox */
+       -ms-user-select: none; /* Internet Explorer/Edge */
+           user-select: none; /* Non-prefixed version, currently
+}

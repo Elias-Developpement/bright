@@ -1,0 +1,53 @@
+/*
+ *    Bright v1.0 - (C) Copyright 2018
+ *    All rights reserved
+ *    Licensed MIT
+ *
+ *    Author : Akadream
+ *    Last update : 16/09/2018
+ */
+
+ @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800');
+
+body {
+  font-family: 'Montserrat','Open Sans', 'Arial', sans-serif;
+}
+
+[href] {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+:focus {
+  outline: inherit;
+}
+
+@import "variables";
+@import "navbar";
+@import "card";
+@import "transitions";
+@import "buttons";
+@import "buttons-group";
+@import "tables";
+@import "alerts";
+@import "badges";
+@import "dreadcrumb";
+@import "form";
+@import "progress";
+@import "tooltip";
+
+::selection {
+  color: white;
+  background: $red;
+}
+
+/*
+@import "cards";
+@import "grid";
+@import "tables";
+@import "badges";
+@import "alertes";
+@import "dropdown";
+@import "buttons";
+@import "modals";
+@import "transitions";*/

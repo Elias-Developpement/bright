@@ -1,0 +1,63 @@
+.form {
+  .form-header, .form-body {
+    padding: 30px 20px 15px 20px;
+  }
+
+  .form-header {
+    .form-title {
+      font-size: 1.6em;
+      font-weight: 100;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  margin-bottom: 30px;
+}
+
+.form-label {
+  margin-bottom: 10px;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.form-input {
+  display: block;
+  width: calc(100% - 22px);
+  height: 22px;
+  padding: 5px 10px;
+  border-radius: 3px;
+
+  font-size: 0.8em;
+  color: $gray-7;
+  border: 1px solid $gray-b;
+}
+
+.form-input[type="password"] {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+select.form-input {
+  width: 100%;
+  height: calc(22px + 12px);
+}
+
+select[multiple].form-input {
+  font-size: 1rem;
+  height: calc(1rem * 5 + 12px);
+
+  option {
+    line-height: initial;
+  }
+}
+
+.form-input-rounded {
+  border-radius: 999px;
+}

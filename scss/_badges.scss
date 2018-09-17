@@ -1,0 +1,23 @@
+.badge {
+  display: inline;
+  padding: 5px;
+
+  font-size: 0.7em;
+  font-weight: bold;
+  border-radius: 3px;
+  background-color: $gray-3;
+  color: $white;
+}
+
+.badge-primary {
+  background-color: $blue;
+}
+
+.badge-danger {
+  background-color: $red;
+}
+
+.badge-critical {
+  background-color: $yellow;
+  color: $gray-2;
+}

@@ -1,0 +1,41 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  min-width: 225px;
+  width: 375px;
+  margin: 50px;
+
+  border-radius: 5px;
+  box-shadow: 0 0 0.4em $gray-d;
+  color: $gray-6;
+
+  .card-header, .card-body {
+    padding: 20px;
+  }
+
+  .card-header {
+    border-bottom: 1px solid $gray-d;
+
+    .card-title {
+      font-size: 1.6em;
+      font-weight: 100;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .card-body {
+    .card-description {
+      margin: 5px 0 10px;
+      line-height: 1.47;
+    }
+  }
+
+  &:hover {
+    box-shadow: 0 0 2em #dedede;
+  }
+}
+
+.card-expand {
+  width: 80%;
+}

@@ -1,0 +1,65 @@
+.button-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: stretch;
+
+  .button {
+    border-radius: 0;
+    background-color: $gray-3;
+    color: $white;
+    border: none;
+
+    &:hover {
+      background-color: $gray-2;
+    }
+  }
+
+  .button-red {
+    background-color: $red;
+
+    &:hover {
+      background-color: $dark-red;
+    }
+  }
+
+  .button-blue {
+    background-color: $blue;
+
+    &:hover {
+      background-color: $dark-blue;
+    }
+  }
+
+  .button-green {
+    background-color: $green;
+
+    &:hover {
+      background-color: $dark-green;
+    }
+  }
+
+  .button-yellow {
+    background-color: $yellow;
+
+    &:hover {
+      background-color: $dark-yellow;
+    }
+  }
+
+  .button-purple {
+    background-color: $purple;
+
+    &:hover {
+      background-color: $dark-purple;
+    }
+  }
+
+  .button:first-child {
+    border-radius: 3px 0 0 3px !important;
+  }
+
+  .button:last-child {
+    border-radius: 0 3px 3px 0 !important;
+  }
+}

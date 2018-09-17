@@ -1,0 +1,70 @@
+
+.button {
+  display: inline;
+  position: relative;
+  padding: $buttons-padding-y $buttons-padding-x;
+  margin: $buttons-margin-y $buttons-margin-x;
+
+  border: 1px solid $gray-3;
+  border-radius: $buttons-default-rounded;
+  background-color: transparent;
+  transition: 0.3s;
+  color: $gray-3;
+  cursor: pointer;
+
+  &:hover {
+    box-sizing: inherit;
+    background-color: $gray-3;
+    color: $white;
+  }
+}
+
+.button-rounded {
+  border-radius: $buttons-rounded;
+}
+
+.button-blue {
+  border-color: $blue;
+  color: $blue;
+
+  &:hover {
+    background-color: $blue;
+  }
+}
+
+.button-red {
+  border-color: $red;
+  color: $red;
+
+  &:hover {
+    background-color: $red;
+  }
+}
+
+.button-green {
+  border-color: $green;
+  color: $green;
+
+  &:hover {
+    background-color: $green;
+  }
+}
+
+.button-yellow {
+  border-color: $yellow;
+  color: $yellow;
+
+  &:hover {
+    background-color: $yellow;
+    color: $gray-2;
+  }
+}
+
+.button-purple {
+  border-color: $purple;
+  color: $purple;
+
+  &:hover {
+    background-color: $purple;
+  }
+}

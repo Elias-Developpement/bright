@@ -1,0 +1,27 @@
+.alert {
+  position: relative;
+  margin: 10px;
+  padding: 15px 20px;
+
+  border: 1px solid $gray-6;
+  border-radius: $alert-default-rounded;
+  background-color: $gray-b;
+}
+
+.alert-danger {
+  border-color: $dark-red;
+  background-color: $light-red;
+  color: $dark-red;
+}
+
+.alert-success {
+  border-color: $dark-green;
+  background-color: $light-green;
+  color: $dark-green;
+}
+
+.alert-critical {
+  border-color: $dark-yellow;
+  background-color: $light-yellow;
+  color: $dark-yellow;
+}

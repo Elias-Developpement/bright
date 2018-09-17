@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../scss/alerts.css",
+	"sources": [
+		"../scss/alerts.scss"
+	],
+	"sourcesContent": [
+		".alert {\r\n  position: relative;\r\n  margin: 10px auto;\r\n  padding: 15px 20px;\r\n}\r\n"
+	],
+	"mappings": ";AAAA,AAAA,MAAM,CAAC;EACL,QAAQ,EAAE,QAAS;EACnB,MAAM,EAAE,SAAU;EAClB,OAAO,EAAE,SAAU;CACpB",
+	"names": []
+}
